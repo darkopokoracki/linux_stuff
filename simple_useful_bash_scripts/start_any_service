@@ -1,7 +1,17 @@
 #!/bin/bash
 
+#Description:
+#Simple useful script for starting any service which is installed on your system.
+
+#Instruction:
+#1. copy/paste this code to your text file and give file name to your script (name.bash)
+#2. write this line of code in terminal: chmod +x name.bash
+#3. Run your your script and give one argument (the name of the service you are starting): ./name.bash mariadb
+
+
 systemctl is-active $1
 
 if [ $? -ne 0 ]; then
     systemctl start $1
 fi
+
