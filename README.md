@@ -1,2 +1,3 @@
-# linux - account creation script
-simple script for creating accounts on linux distribution
+# linux_stuff
+
+In this repository you will find simple usefull linux stuff such as linux commands, simple scripts, solutions and others...
