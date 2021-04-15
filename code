@@ -1,3 +1,11 @@
 #!/bin/bash
 
-for FILE in $(
+for FILE in $(cat users.txt)
+do
+    username=$(echo $LINE | cut -d "," -f 1)
+    password=$(echo $LINE | cut -d "," -f 2)
+    #for testing: echo $username $password
+    
+    useradd $username
+    echo "$username:$password" | chpasswd
+done
