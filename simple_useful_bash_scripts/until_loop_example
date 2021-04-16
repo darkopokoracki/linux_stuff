@@ -1,0 +1,10 @@
+#!/bin/bash
+
+i=0
+
+until [ $i -eq 3 ]
+do
+    echo "$i isn't equal to 3 (false), so the iteration will be performed"
+    ((i++))
+done
+
