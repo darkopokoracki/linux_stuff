@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Select the letter A, B or C: "
+read input
+
+if [ $input == "A" ]; then
+    echo "You have selected letter A!"
+elif [ $input == "B" ]; then
+    echo "You have selected letter B!"
+elif [ $input == "C" ]; then
+    echo "You have selected letter C!"
+else
+    echi "Wrong letter!"
+fi
